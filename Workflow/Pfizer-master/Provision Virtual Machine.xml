@@ -2,8 +2,8 @@
 <workflow xmlns="http://vmware.com/vco/workflow" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://vmware.com/vco/workflow http://vmware.com/vco/workflow/Workflow-v4.xsd" root-name="item4" object-name="workflow:name=generic" id="81a188be-0706-41ef-969d-9ad630efb290" version="0.0.4" api-version="6.0.0" allowed-operations="vef" restartMode="1" resumeFromFailedMode="0">
   <display-name><![CDATA[Provision Virtual Machine]]></display-name>
   <position y="50.0" x="100.0"/>
-  <attrib name="Repository" type="CodeGuardian:GitRemoteRepo" read-only="false">
-    <value encoded="n"><![CDATA[dunes://service.dunes.ch/CustomSDKObject?id='Production%20Jenkins%20Demo'&dunesName='CodeGuardian:GitRemoteRepo']]></value>
+  <attrib name="Repository1" type="CodeGuardian:GitRemoteRepo" read-only="false">
+    <value encoded="n"><![CDATA[dunes://service.dunes.ch/CustomSDKObject?id='Pfizer-master'&dunesName='CodeGuardian:GitRemoteRepo']]></value>
     <description><![CDATA[Select the Git Reposotory you would want to pull from]]></description>
   </attrib>
   <workflow-item name="item0" type="end" end-mode="0">
@@ -12,7 +12,7 @@
   <workflow-item name="item4" out-name="item1" type="link" linked-workflow-id="cf6fb9a7-6d64-4df3-b4fe-2e4c33a520a1">
     <display-name><![CDATA[Pull]]></display-name>
     <in-binding>
-      <bind name="Repository" type="CodeGuardian:GitRemoteRepo" export-name="Repository">
+      <bind name="Repository" type="CodeGuardian:GitRemoteRepo" export-name="Repository1">
         <description><![CDATA[Select the Git Reposotory you would want to pull from]]></description>
       </bind>
     </in-binding>

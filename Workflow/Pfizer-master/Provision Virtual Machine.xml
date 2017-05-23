@@ -3,7 +3,7 @@
   <display-name><![CDATA[Provision Virtual Machine]]></display-name>
   <position y="50.0" x="100.0"/>
   <attrib name="Repository1" type="CodeGuardian:GitRemoteRepo" read-only="false">
-    <value encoded="n"><![CDATA[dunes://service.dunes.ch/CustomSDKObject?id='Pfizer%20Master%20Repo'&dunesName='CodeGuardian:GitRemoteRepo']]></value>
+    <value encoded="n"><![CDATA[dunes://service.dunes.ch/CustomSDKObject?id='vRO%20Prod%20Repo'&dunesName='CodeGuardian:GitRemoteRepo']]></value>
     <description><![CDATA[Select the Git Reposotory you would want to pull from]]></description>
   </attrib>
   <workflow-item name="item0" type="end" end-mode="0">

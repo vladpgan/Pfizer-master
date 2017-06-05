@@ -3,8 +3,11 @@
   <display-name><![CDATA[Provision Virtual Machine]]></display-name>
   <position y="50.0" x="100.0"/>
   <attrib name="Repository1" type="CodeGuardian:GitRemoteRepo" read-only="false">
-    <value encoded="n"><![CDATA[dunes://service.dunes.ch/CustomSDKObject?id='vRO%20Prod%20Repo'&dunesName='CodeGuardian:GitRemoteRepo']]></value>
+    <value encoded="n"><![CDATA[dunes://service.dunes.ch/CustomSDKObject?id='CG7'&dunesName='CodeGuardian:GitRemoteRepo']]></value>
     <description><![CDATA[Select the Git Reposotory you would want to pull from]]></description>
+  </attrib>
+  <attrib name="demo_attr" type="string" read-only="false">
+    <value encoded="n"><![CDATA[testing]]></value>
   </attrib>
   <workflow-item name="item0" type="end" end-mode="0">
     <position y="45.40909090909091" x="944.5"/>
@@ -29,7 +32,7 @@ The latest commit of the current working branch will get imported.]]></descripti
   </workflow-item>
   <workflow-item name="item2" out-name="item4" type="task">
     <display-name><![CDATA[Scriptable task]]></display-name>
-    <script encoded="false"><![CDATA[throw("This is an error in the Production environment!");
+    <script encoded="false"><![CDATA[//throw("This is an error in the Production environment!");
 System.log("Dev test");]]></script>
     <in-binding/>
     <out-binding/>

@@ -3,11 +3,14 @@
   <display-name><![CDATA[Provision Virtual Machine]]></display-name>
   <position y="50.0" x="100.0"/>
   <attrib name="Repository1" type="CodeGuardian:GitRemoteRepo" read-only="false">
-    <value encoded="n"><![CDATA[dunes://service.dunes.ch/CustomSDKObject?id='CG7'&dunesName='CodeGuardian:GitRemoteRepo']]></value>
+    <value encoded="n"><![CDATA[dunes://service.dunes.ch/CustomSDKObject?id='VMware%20Demo'&dunesName='CodeGuardian:GitRemoteRepo']]></value>
     <description><![CDATA[Select the Git Reposotory you would want to pull from]]></description>
   </attrib>
   <attrib name="demo_attr" type="string" read-only="false">
     <value encoded="n"><![CDATA[testing]]></value>
+  </attrib>
+  <attrib name="demo2" type="string" read-only="false">
+    <value encoded="n"><![CDATA[test]]></value>
   </attrib>
   <workflow-item name="item0" type="end" end-mode="0">
     <position y="45.40909090909091" x="944.5"/>

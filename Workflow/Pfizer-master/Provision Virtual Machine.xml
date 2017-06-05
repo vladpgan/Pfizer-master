@@ -31,7 +31,8 @@ The latest commit of the current working branch will get imported.]]></descripti
     <display-name><![CDATA[Scriptable task]]></display-name>
     <script encoded="false"><![CDATA[//throw("This is an error in the Production environment!");
 System.log("Dev test");
-System.log("Dev test #2");]]></script>
+System.log("Dev test #2");
+System.log("Dev test #3");]]></script>
     <in-binding/>
     <out-binding/>
     <position y="55.40909090909091" x="204.5"/>
